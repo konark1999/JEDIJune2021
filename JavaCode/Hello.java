@@ -9,4 +9,8 @@ class Hello {
 	public void helloWord() {
 	
 	}
+
+	public void greeting(String name) {
+		System.out.println("hello "+name);
+	}
 }
