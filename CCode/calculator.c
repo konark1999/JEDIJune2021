@@ -2,6 +2,10 @@
 #include<stdlib.h>
 #include<limits.h>
 int addition(int a,int b) {
+	if((b>0 && (a>INT_MAX-b) || (b<0 || a<INT_MIN-b )) {
+			printf("overflow condition");
+			return -1;
+		}
 	return a+b;
 }
 int subtraction(int a,int b) {
